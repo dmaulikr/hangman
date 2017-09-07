@@ -32,7 +32,7 @@ class ViewController: UIViewController {
 	}
 	
 	@IBAction func takeGuess(_ sender: Any) {
-		let ac = UIAlertController(title: "Enter answer", message: nil, preferredStyle: .alert)
+		let ac = UIAlertController(title: "Enter answer:", message: nil, preferredStyle: .alert)
 		ac.addTextField()
 		
 		let submitAction = UIAlertAction(title: "Submit", style: .default) {
@@ -98,6 +98,9 @@ class ViewController: UIViewController {
 		wrongs = 0;
 		score = 0;
 		solutionLabel.text = ""
+		wordCount += 1
+		usedWords.removeAll()
+
 	
 		allWords = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: allWords) as! [String]
 		
@@ -105,7 +108,6 @@ class ViewController: UIViewController {
 			self.solutionLabel.text!.append("_")
 		}
 		
-		wordCount += 1
 
 	}
 	
@@ -135,12 +137,13 @@ class ViewController: UIViewController {
 	func nextRound(action: UIAlertAction) {
 		solutionLabel.text = ""
 		wrongs = 0
+		wordCount += 1
+		usedWords.removeAll()
 		
 		for _ in 0..<allWords[wordCount].characters.count {
 			self.solutionLabel.text!.append("_")
 		}
 		
-		wordCount += 1
 	}
 
 	override func didReceiveMemoryWarning() {
