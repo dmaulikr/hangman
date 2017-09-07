@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F25BE021F6197F5001A3228 /* wordlist.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3F25BE011F6197F5001A3228 /* wordlist.txt */; };
 		3F87C9931F098D5D003901C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F87C9921F098D5D003901C3 /* AppDelegate.swift */; };
 		3F87C9951F098D5D003901C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F87C9941F098D5D003901C3 /* ViewController.swift */; };
 		3F87C9981F098D5D003901C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F87C9961F098D5D003901C3 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F25BE011F6197F5001A3228 /* wordlist.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wordlist.txt; sourceTree = "<group>"; };
 		3F87C98F1F098D5D003901C3 /* hangman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hangman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F87C9921F098D5D003901C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F87C9941F098D5D003901C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 			children = (
 				3F87C9911F098D5D003901C3 /* hangman */,
 				3F87C9901F098D5D003901C3 /* Products */,
+				3F25BE011F6197F5001A3228 /* wordlist.txt */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +129,7 @@
 			files = (
 				3F87C99D1F098D5D003901C3 /* LaunchScreen.storyboard in Resources */,
 				3F87C99A1F098D5D003901C3 /* Assets.xcassets in Resources */,
+				3F25BE021F6197F5001A3228 /* wordlist.txt in Resources */,
 				3F87C9981F098D5D003901C3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +306,7 @@
 				3F87C9A31F098D5D003901C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
